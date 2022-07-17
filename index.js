@@ -9,17 +9,12 @@ const questions = [
       {
         type: 'input',
         message: 'What is your project title?',
-        name: 'title',
+        name: 'projtitle',
       },
       {
         type: 'input',
         message: 'Describe your project:',
         name: 'description',
-      },
-      {
-        type: 'input',
-        message: 'Table of content',/* links to sections */
-        name: 'toc',
       },
       {
         type: 'input',
@@ -53,13 +48,6 @@ const questions = [
         name: 'email',
       },
     ])
-    .then((data) => {
-      console.log(data);
-      const filename = `${data.title.toLowerCase().split(' ').join('')}.json`;
-      fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-        err ? console.log(err) : console.log('Readme.md Created!')
-      );
-    })
 ];
 
 // TODO: Create a function to write README file
