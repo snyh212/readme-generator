@@ -83,6 +83,11 @@ E-mail: ${data.email}
 
   fs.writeFile("./README.md", markdown, err => {
     console.log(data);
+    if(data.license == "MIT") {
+      prepend("README.md", "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", err => {
+        if(err) {console.log(err)}
+      })
+    }
     if(err) {
       console.log(err);
     }
