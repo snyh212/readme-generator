@@ -42,7 +42,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Tests',
+    message: 'Tests Instructions',
     name: 'tests',
   },
   {
@@ -63,7 +63,7 @@ const markdown = `# ${data.title}
 ${data.description}
 
 ## Table of Contents
--[Usage](#usage)
+[Usage](#usage)
 -[License](#license)
 -[Contribution](#contribution)
 -[Tests](#tests)
@@ -84,8 +84,8 @@ ${data.contribution}
 ## Tests
 ${data.tests}
 
-## Questions
-GitHub: ${data.github}
+## Questions & Contact
+GitHub: [${data.github}](https://github.com/${data.github})
 E-mail: ${data.email}
 `;
 
