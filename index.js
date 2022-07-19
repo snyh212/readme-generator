@@ -52,11 +52,17 @@ inquirer
   },
 ])
 .then((data) => {
-const markdown = `
-# ${data.title}
+const markdown = `# ${data.title}
 
 ## Description
 ${data.description}
+
+## Table of Contents
+-[Usage](#usage)
+-[License](#license)
+-[Contribution](#contribution)
+-[Tests](#tests)
+-[Questions](#questions)
 
 ## Usage
 ${data.usage}
@@ -77,13 +83,6 @@ E-mail: ${data.email}
 
   fs.writeFile("./README.md", markdown, err => {
     console.log(data);
-    if(data.license == "MIT") {
-      prepend("README.md", "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", err => {
-        if(err) {
-          console.log(err);
-        }
-      })
-    }
     if(err) {
       console.log(err);
     }
