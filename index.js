@@ -27,7 +27,7 @@ inquirer
   {
     type: 'list',
     message: 'What licences:',
-    choices: ['MIT', 'other', 'other'],
+    choices: ['MIT', 'Mozilla', 'Boost', 'Apache', 'Eclipse', 'Unlicense', 'WTFPL'],
     name: 'license',
   },
   {
@@ -88,16 +88,46 @@ E-mail: ${data.email}
         if(err) {console.log(err)}
       })
     }
+    if(data.license == "Mozilla") {
+      prepend("README.md", "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)", err => {
+        if(err) {console.log(err)}
+      })
+    }
+    if(data.license == "Boost") {
+      prepend("README.md", "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)", err => {
+        if(err) {console.log(err)}
+      })
+    }
+    if(data.license == "Apache") {
+      prepend("README.md", "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)", err => {
+        if(err) {console.log(err)}
+      })
+    }
+    if(data.license == "Eclipse") {
+      prepend("README.md", "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)", err => {
+        if(err) {console.log(err)}
+      })
+    }
+    if(data.license == "WTFPL") {
+      prepend("README.md", "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)", err => {
+        if(err) {console.log(err)}
+      })
+    }
+    if(data.license == "Unlicense") {
+      prepend("README.md", "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)", err => {
+        if(err) {console.log(err)}
+      })
+    }
     if(err) {
       console.log(err);
     }
   });
-
 });
 /* ]; */
 
-/* 
 
+
+/* 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
