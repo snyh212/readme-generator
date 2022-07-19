@@ -2,7 +2,7 @@
 # README Generator
 
 ## Description
-Readme Gererator is a command line application that prompts the user with a set of questions and generates a markdown file named README.md with the responses.
+README Generator is a commond line application that prompts the user with questions and uses the responses to write a markdown file named README.md.
 
 ## Table of Contents
 -[Installation](#installation)
@@ -13,16 +13,16 @@ Readme Gererator is a command line application that prompts the user with a set 
 -[Questions](#questions)
 
 ## Installation
-From the GitHub repository, can be found at bottom of readme. npm inquire@8 and require needed as weel.
+From GitHub repository, linked at bottom of page. NMP inquire and require needed as well.
 
 ## Usage
-Can be used to generate new readme files without the need to structure it out fully.
+Allows a user to create readme's based on the responses given to the prompts.
 
 ## License
 MIT
 
 ## Contribution
-undefined
+Me
 
 ## Tests
 Watch video

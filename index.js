@@ -26,7 +26,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Project Usage',
+    message: 'Project Usage:',
     name: 'usage',
   },
   {
@@ -37,7 +37,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Who contributed',
+    message: 'Who contributed?',
     name: 'contributed',
   },
   {
@@ -52,7 +52,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'What is your email address',
+    message: 'What is your email address?',
     name: 'email',
   },
 ])
@@ -63,7 +63,7 @@ const markdown = `# ${data.title}
 ${data.description}
 
 ## Table of Contents
--[Installation](#installation)
+[Installation](#installation)
 -[Usage](#usage)
 -[License](#license)
 -[Contribution](#contribution)
