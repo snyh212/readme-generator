@@ -21,6 +21,11 @@ inquirer
   },
   {
     type: 'input',
+    message: 'How to install:',
+    name: 'install',
+  },
+  {
+    type: 'input',
     message: 'Project Usage',
     name: 'usage',
   },
@@ -63,6 +68,9 @@ ${data.description}
 -[Contribution](#contribution)
 -[Tests](#tests)
 -[Questions](#questions)
+
+## Installation
+${data.install}
 
 ## Usage
 ${data.usage}
