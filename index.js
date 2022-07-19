@@ -80,7 +80,7 @@ ${data.usage}
 ${data.license}
 
 ## Contribution
-${data.contribution}
+${data.contributed}
 
 ## Tests
 ${data.tests}
