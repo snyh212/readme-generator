@@ -88,7 +88,7 @@ ${data.tests}
 ## Questions
 GitHub: [${data.github}](https://github.com/${data.github})
 
-E-mail: [${data.email}](${data.email})
+E-mail: [${data.email}](mailto:${data.email})
 `;
 
   fs.writeFile("./README.md", markdown, err => {
