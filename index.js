@@ -63,7 +63,7 @@ const markdown = `# ${data.title}
 ${data.description}
 
 ## Table of Contents
--[Installation](#Installation)
+-[Installation](#installation)
 -[Usage](#usage)
 -[License](#license)
 -[Contribution](#contribution)
@@ -85,7 +85,7 @@ ${data.contribution}
 ## Tests
 ${data.tests}
 
-## Questions & Contact
+## Questions
 GitHub: [${data.github}](https://github.com/${data.github})
 
 E-mail: [${data.email}](${data.email})
