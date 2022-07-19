@@ -63,7 +63,8 @@ const markdown = `# ${data.title}
 ${data.description}
 
 ## Table of Contents
-[Usage](#usage)
+-[Installation](#Installation)
+-[Usage](#usage)
 -[License](#license)
 -[Contribution](#contribution)
 -[Tests](#tests)
@@ -86,7 +87,8 @@ ${data.tests}
 
 ## Questions & Contact
 GitHub: [${data.github}](https://github.com/${data.github})
-E-mail: ${data.email}
+
+E-mail: [${data.email}](${data.email})
 `;
 
   fs.writeFile("./README.md", markdown, err => {
